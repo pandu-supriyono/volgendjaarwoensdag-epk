@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@layer base {
+    a {
+        color: var(--color-blue-700);
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--color-blue-800);
+        }
+
+        &:visited {
+            color: var(--color-purple-700);
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "vjw-epk",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@tailwindcss/cli": "^4.1.18",
+    "@tailwindcss/postcss": "^4.1.18",
+    "archiver": "^7.0.1",
+    "cssnano": "^7.1.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
+}
