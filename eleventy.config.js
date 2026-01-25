@@ -6,6 +6,7 @@ import cssnano from 'cssnano';
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
+import embedYouTube from 'eleventy-plugin-youtube-embed';
 
 export default function (eleventyConfig) {
   // generate build timestamp for presskit zip
@@ -63,6 +64,10 @@ export default function (eleventyConfig) {
 
   // copy ./src/presskit to dist/presskit
   eleventyConfig.addPassthroughCopy({ './src/presskit': 'presskit' });
+
+  eleventyConfig.addPlugin(embedYouTube, {
+    lite: true,
+  });
 
   return {
     dir: { input: 'src', output: 'dist' },
